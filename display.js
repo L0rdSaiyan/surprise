@@ -17,7 +17,7 @@ const textoParagrafo = "Hoje estou aqui lhe enviando esta mensagem para lhe dese
 paragraph.textContent = textoParagrafo
 // Cria o elemento <video> dentro do <div>
 const video = document.createElement("video");
-video.src = "/obrisguaido.mp4";
+video.src = "obrisguaido.mp4";
 video.autoplay = true;
 
 // Adiciona o <p> e o <video> ao <div>
