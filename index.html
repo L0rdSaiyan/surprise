@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parabéns, Bruno!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="display.js" defer></script>
+  </head>
+  <body>
+
+    
+
+    <div class="content">
+      <h1>Parabéns, Bruno Paiva <span id="meme">Na Cruz de Jesus</span></h1>
+      <img src="/thumbsup.png" alt="Thumbs up" class="parabens__img" /><br />
+      <button onclick="makeVisible();" class="c-button c-button--gooey">
+        Clique aqui
+        <div class="c-button__blobs">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        style="display: block; height: 0; width: 0"
+      >
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            ></feGaussianBlur>
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            ></feColorMatrix>
+            <feBlend in="SourceGraphic" in2="goo"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+
+    <canvas id="my-canvas"></canvas>
+
+    <script src="app.min.js"></script>
+    <script>
+      var confettiSettings = { target: "my-canvas" };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
+  </body>
+</html>
