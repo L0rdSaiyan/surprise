@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="display.js" defer></script>
   </head>
-  <body onload="playAudio()">
+  <body>
     
     <div class="header" >
       <img id="logo" src="logo.png" alt="Clemilton">
     </div>
-    <audio id="audioEntrada" src="./audio.mp3" ></audio>
+
+    <audio src="" id="audioEntrada"></audio>
+
+    
 
 
-<div class="content">
+<div class="content" onload="tocarAuido();">
     <h1>Parabéns, <span id="meme">Clemilton</span></h1>
     <img src="thumbsup.png" alt="Thumbs up" class="parabens__img"><br>
     <button onclick="makeVisible();" class="c-button c-button--gooey">
