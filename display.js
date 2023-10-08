@@ -1,12 +1,3 @@
-const audio = document.getElementById("audioEntrada");
-
-const tocarAuido = () => {
-    audio.src = 'audioClemis.wav'
-    audio.play()
-
-};
-
-
 
 
 const makeVisible = () =>{
@@ -48,7 +39,7 @@ Um grande abraço,
 paragraph.textContent = textoParagrafo
 // Cria o elemento <video> dentro do <div>
 const video = document.createElement("video");
-video.src = "obrisguaido.mp4";
+video.src = "videoclemis.mp4";
 video.autoplay = true;
 
 // Adiciona o <p> e o <video> ao <div>
@@ -59,4 +50,3 @@ document.body.appendChild(divContentAfter);
 
 }
 
-window.addEventListener("DOMContentLoaded", tocarAuido);
