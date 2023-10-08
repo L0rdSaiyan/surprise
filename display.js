@@ -1,6 +1,9 @@
-let audio = document.querySelector("#audioEntrada");
-const playAudio = () => {
-    audio.play();
+const audio = document.getElementById("audioEntrada");
+
+const tocarAuido = () => {
+    audio.src = 'audioClemis.wav'
+    audio.play()
+
 };
 
 
@@ -56,3 +59,4 @@ document.body.appendChild(divContentAfter);
 
 }
 
+window.addEventListener("DOMContentLoaded", tocarAuido);
